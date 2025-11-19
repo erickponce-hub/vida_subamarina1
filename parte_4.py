@@ -8,11 +8,11 @@ pygame.init()
 pygame.mixer.init()
 
 # Cargamos sonidos
-bite_sound = pygame.mixer.Sound("Bite.mp3")
-error_sound = pygame.mixer.Sound("Error.mp3")
+bite_sound = pygame.mixer.Sound("vida_subamarina1/Bite.mp3")
+error_sound = pygame.mixer.Sound("vida_subamarina1/Error.mp3")
 
 # Cargar y reproducir música de fondo
-pygame.mixer.music.load("soundtrack.mp3")
+pygame.mixer.music.load("vida_subamarina1/soundtrack.mp3")
 pygame.mixer.music.play(-1) # -1 para repeticion indefinida
 
 # Tamaño de pantalla
@@ -26,8 +26,8 @@ small_font = pygame.font.Font(None, 24)
 clock = pygame.time.Clock()
 
 # Cargar imágenes
-fondo = pygame.image.load("Fondo.png")
-pez_img_original = pygame.image.load("Pez.png")
+fondo = pygame.image.load("vida_subamarina1/Fondo.png")
+pez_img_original = pygame.image.load("vida_subamarina1/Pez.png")
 pez_img_original = pygame.transform.scale(pez_img_original, (50, 50))
 
 # Crear versiones del pez en diferentes direcciones
@@ -44,13 +44,13 @@ pez_down_left = pygame.transform.flip(pygame.transform.rotate(pez_img_original, 
 
 pez_img = pez_right # Imagen actual del pez
 
-alga_img = pygame.image.load("Alga.png")
+alga_img = pygame.image.load("vida_subamarina1/Alga.png")
 alga_img = pygame.transform.scale(alga_img, (40, 40))
-lata_img = pygame.image.load("lata.png")
+lata_img = pygame.image.load("vida_subamarina1/lata.png")
 lata_img = pygame.transform.scale(lata_img, (30, 30))
-llanta_img = pygame.image.load("llanta.png")
+llanta_img = pygame.image.load("vida_subamarina1/llanta.png")
 llanta_img = pygame.transform.scale(llanta_img, (30, 30))
-papel_img = pygame.image.load("papel.png")
+papel_img = pygame.image.load("vida_subamarina1/papel.png")
 papel_img = pygame.transform.scale(papel_img, (30, 30))
 
 # Variables del juego
